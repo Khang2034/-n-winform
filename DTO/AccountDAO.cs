@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WindowsFormsApp1.DTO
 {
@@ -19,10 +20,10 @@ namespace WindowsFormsApp1.DTO
         private AccountDAO() { }
 
         public bool Login(string username, string password)
-        {
-            string query = "SELECT * FROM dbo.Account WHERE Username = N'" +username+ "' AND Password = N'" +password+ "' ";
+        {   
+            string query = "USP_Login @userName , @password";
             
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] {username, password});
 
 
             return result.Rows.Count > 0;

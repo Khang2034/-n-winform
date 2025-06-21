@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\",
+  "WorkspaceRootPath": "D:\\Project\\Winformapp\\-n-winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\\u0111\u1ED3 \u00E1n 1 winform\\windowsformsapp1\\dto\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|D:\\Project\\Winformapp\\-n-winform\\dto\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:dto\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\project\\winformapp\\-n-winform\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\project\\winformapp\\-n-winform\\dto\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:dto\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +22,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountDAO.cs",
-              "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\DTO\\AccountDAO.cs",
-              "RelativeDocumentMoniker": "DTO\\AccountDAO.cs",
-              "ToolTip": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\DTO\\AccountDAO.cs",
-              "RelativeToolTip": "DTO\\AccountDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
+              "Title": "DataProvider.cs",
+              "DocumentMoniker": "D:\\Project\\Winformapp\\-n-winform\\DTO\\DataProvider.cs",
+              "RelativeDocumentMoniker": "DTO\\DataProvider.cs",
+              "ToolTip": "D:\\Project\\Winformapp\\-n-winform\\DTO\\DataProvider.cs",
+              "RelativeToolTip": "DTO\\DataProvider.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T05:20:07.731Z",
+              "WhenOpened": "2025-06-21T12:51:00.539Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAA2AAAAAAAAAA==",
+              "Title": "Admin.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\Winformapp\\-n-winform\\Admin.Designer.cs",
+              "RelativeDocumentMoniker": "Admin.Designer.cs",
+              "ToolTip": "D:\\Project\\Winformapp\\-n-winform\\Admin.Designer.cs",
+              "RelativeToolTip": "Admin.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T05:14:44.656Z",
+              "WhenOpened": "2025-06-21T12:49:19.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs [Design]",
-              "RelativeToolTip": "Login.cs [Design]",
+              "Title": "AccountDAO.cs",
+              "DocumentMoniker": "D:\\Project\\Winformapp\\-n-winform\\DTO\\AccountDAO.cs",
+              "RelativeDocumentMoniker": "DTO\\AccountDAO.cs",
+              "ToolTip": "D:\\Project\\Winformapp\\-n-winform\\DTO\\AccountDAO.cs",
+              "RelativeToolTip": "DTO\\AccountDAO.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T03:18:05.821Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-20T05:20:07.731Z",
+              "EditorCaption": ""
             }
           ]
         }

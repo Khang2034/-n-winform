@@ -19,7 +19,7 @@ namespace WindowsFormsApp1.DTO
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=LAPTOP-KHANG\\SQLEXPRESS01;Initial Catalog=QuanLyQuanCafe;Integrated Security=True;";
+        private string connectionSTR = "Data Source=KUMALALA\\SQLEXPRESS;Initial Catalog=QuanLyQuanCafe;Integrated Security=True;";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

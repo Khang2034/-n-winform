@@ -156,7 +156,6 @@
             this.btnAddFood.TabIndex = 2;
             this.btnAddFood.Text = "Thêm món";
             this.btnAddFood.UseVisualStyleBackColor = true;
-            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // cbFood
             // 
@@ -198,7 +197,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "giảm giá";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // nmDisCount
             // 
@@ -216,7 +214,6 @@
             this.btnSwitchTable.TabIndex = 5;
             this.btnSwitchTable.Text = "Chuyển bàn";
             this.btnSwitchTable.UseVisualStyleBackColor = true;
-            this.btnSwitchTable.Click += new System.EventHandler(this.button2_Click);
             // 
             // cbSwitchTable
             // 
@@ -240,7 +237,6 @@
             this.Name = "TableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý quán cà phê";
-            this.Load += new System.EventHandler(this.TableManager_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);

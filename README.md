@@ -12,4 +12,4 @@
 
 ## ⚙ Cấu hình chuỗi kết nối
 ```csharp
-Data Source=.;Initial Catalog=QuanLyThuVien;Integrated Security=True
+Data Source=.;Initial Catalog=QuanLyQuanCafe;Integrated Security=True

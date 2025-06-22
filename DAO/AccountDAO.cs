@@ -20,9 +20,10 @@ namespace WindowsFormsApp1.DTO
 
         public bool Login(string username, string password)
         {
-            string query = "SELECT * FROM dbo.Account WHERE Username = N'" +username+ "' AND Password = N'" +password+ "' ";
-            
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            string query = "USP_Login @userName , @password";
+
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] {username, password});
 
 
             return result.Rows.Count > 0;

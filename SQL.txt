@@ -1,0 +1,107 @@
+USE master;
+
+IF EXISTS (SELECT name FROM sys.databases WHERE name = N'QuanLyQuanCafe')
+BEGIN
+    ALTER DATABASE QuanLyQuanCafe SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE QuanLyQuanCafe;
+END;
+
+create database QuanLyQuanCafe;
+
+use QuanLyQuanCafe;
+
+create table TableFood
+(
+	id int identity primary key,
+	name nvarchar(100) not null default N'bàn chưa có tên',
+	status nvarchar(100) not null default N'Trống'
+)
+;
+
+create table Account
+(
+	username nvarchar(100) primary key,
+	displayname nvarchar(100) not null default N'Khang',
+	[password] nvarchar(1000) default 0,
+	type int not null default 0
+)
+;
+
+create table FoodCategory
+(
+	id int identity primary key,
+	name nvarchar(100) not null default N'chưa đặt tên'
+)
+;
+
+create table Food 
+(
+	id int identity primary key,
+	name nvarchar(100) not null default N'chưa đặt tên',
+	idcategory int not null,
+	price float not null default 0,
+	foreign key (idcategory) references dbo.foodcategory(id)
+)
+;
+
+create table Bill
+(
+	id int identity primary key,
+	datecheckin date not null default getdate(),
+	datecheckout date,
+	idtable int not null,
+	status int not null default 0,
+	foreign key (idtable) references dbo.tablefood(id)
+)
+;
+
+create table BillInfo
+(
+	id int identity primary key,
+	idbill int not null,
+	idfood int not null,
+	count int not null default 0,
+	foreign key (idbill) references dbo.bill(id),
+	foreign key (idfood) references dbo.food(id)
+)
+;
+
+insert into dbo.account(	username,	displayname,	password,	type)
+						values (	N'Khangluu' ,	N'Khang' ,	N'1',	1)
+
+insert into dbo.account(	username,	displayname,	password,	type)
+						values (	N'staff' ,	N'staff' ,	N'1',	0);
+
+create Proc usp_getaccountbyusername
+@username nvarchar(100)
+as
+begin	
+select * from dbo.account where username = @username
+end;
+go
+
+exec dbo.usp_getaccountbyusername @username = N'Khangluu' --nvarchar (100)
+select * from dbo.account where username = N'' OR 1=1--
+
+CREATE PROC USP_Login
+@userName nvarchar (100), @password nvarchar (100)
+AS
+BEGIN
+SELECT * FROM dbo. Account WHERE UserName = @username AND Password = @password
+END
+GO
+
+DECLARE @i INT = 0
+WHILE @i <= 10
+BEGIN
+INSERT dbo.TableFood (name) VALUES ( N'Bàn ' + CAST (@i AS nvarchar(100)))
+SET @i = @i + 1
+END
+
+CREATE PROC USP_GetTableList
+AS SELECT * FROM dbo.TableFood 
+GO
+
+update dbo.TableFood set status = N'Có người' Where id = 9
+
+exec dbo. USP_GetTableList

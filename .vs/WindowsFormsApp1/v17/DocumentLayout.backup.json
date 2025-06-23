@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\",
+  "WorkspaceRootPath": "D:\\Project\\Winformapp\\-n-winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\dto\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:dto\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\project\\winformapp\\-n-winform\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\\u0111\u1ED3 \u00E1n 1 winform\\windowsformsapp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\project\\winformapp\\-n-winform\\dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|d:\\project\\winformapp\\-n-winform\\dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|WindowsFormsApp1.csproj|solutionrelative:dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +22,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountDAO.cs",
-              "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\DTO\\AccountDAO.cs",
-              "RelativeDocumentMoniker": "DTO\\AccountDAO.cs",
-              "ToolTip": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\DTO\\AccountDAO.cs",
-              "RelativeToolTip": "DTO\\AccountDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Table.cs",
+              "DocumentMoniker": "D:\\Project\\Winformapp\\-n-winform\\DTO\\Table.cs",
+              "RelativeDocumentMoniker": "DTO\\Table.cs",
+              "ToolTip": "D:\\Project\\Winformapp\\-n-winform\\DTO\\Table.cs",
+              "RelativeToolTip": "DTO\\Table.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T05:20:07.731Z",
+              "WhenOpened": "2025-06-22T17:37:46.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAA2AAAAAAAAAA==",
+              "Title": "TableDAO.cs",
+              "DocumentMoniker": "D:\\Project\\Winformapp\\-n-winform\\DAO\\TableDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\TableDAO.cs",
+              "ToolTip": "D:\\Project\\Winformapp\\-n-winform\\DAO\\TableDAO.cs",
+              "RelativeToolTip": "DAO\\TableDAO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T05:14:44.656Z",
+              "WhenOpened": "2025-06-22T17:34:37.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\\u0111\u1ED3 \u00E1n 1 winform\\WindowsFormsApp1\\Login.cs [Design]",
-              "RelativeToolTip": "Login.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "TableManager.cs",
+              "DocumentMoniker": "D:\\Project\\Winformapp\\-n-winform\\TableManager.cs",
+              "RelativeDocumentMoniker": "TableManager.cs",
+              "ToolTip": "D:\\Project\\Winformapp\\-n-winform\\TableManager.cs",
+              "RelativeToolTip": "TableManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwCIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T03:18:05.821Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-22T17:30:30.017Z",
+              "EditorCaption": ""
             }
           ]
         }

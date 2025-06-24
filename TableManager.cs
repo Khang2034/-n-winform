@@ -29,8 +29,10 @@ namespace WindowsFormsApp1
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight};
                 btn.Text = item.Name + Environment.NewLine + item.Status;
+                btn.Click += btn_Click;
+                btn.Tag = item;
 
-                switch(item.Status)
+                switch (item.Status)
                 {
                     case "Trống":
                         btn.BackColor = Color.Aqua;
@@ -42,8 +44,29 @@ namespace WindowsFormsApp1
                 flpTable.Controls.Add(btn);
             }
         }
+        void showBill(int id)
+        {
+            lsvBill.Items.Clear();
+            List<WindowsFormsApp1.DTO.Menu> listBillInfo = MenuDAO.Instance.GetListMenuByTable(id);
+
+            foreach (WindowsFormsApp1.DTO.Menu item in listBillInfo)
+            {
+                ListViewItem lsvItem = new ListViewItem(item.FoodName.ToString());
+
+                lsvItem.SubItems.Add(item.Count.ToString());
+                lsvItem.SubItems.Add(item.Price.ToString());
+                lsvItem.SubItems.Add(item.TotalPrice.ToString());
+
+                lsvBill.Items.Add(lsvItem);
+            }
+        }
         #endregion
         #region Events
+        void btn_Click(object sender, EventArgs e)
+        {
+            int tableID = ((sender as Button).Tag as Table).ID;
+            showBill(tableID);
+        }
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();

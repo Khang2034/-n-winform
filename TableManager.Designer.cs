@@ -35,6 +35,8 @@
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lsvBill = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
             this.cbSwitchTable = new System.Windows.Forms.ComboBox();
             this.btnSwitchTable = new System.Windows.Forms.Button();
@@ -47,6 +49,8 @@
             this.cbFood = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -63,7 +67,7 @@
             this.thôngTinTàiKhoảnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -101,20 +105,37 @@
             // 
             this.panel2.Controls.Add(this.lsvBill);
             this.panel2.Location = new System.Drawing.Point(597, 103);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(469, 366);
             this.panel2.TabIndex = 1;
             // 
             // lsvBill
             // 
+            this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lsvBill.GridLines = true;
             this.lsvBill.HideSelection = false;
-            this.lsvBill.Location = new System.Drawing.Point(0, 0);
-            this.lsvBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsvBill.Location = new System.Drawing.Point(-11, 0);
+            this.lsvBill.Margin = new System.Windows.Forms.Padding(4);
             this.lsvBill.Name = "lsvBill";
-            this.lsvBill.Size = new System.Drawing.Size(468, 374);
+            this.lsvBill.Size = new System.Drawing.Size(476, 374);
             this.lsvBill.TabIndex = 0;
             this.lsvBill.UseCompatibleStateImageBehavior = false;
+            this.lsvBill.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên món";
+            this.columnHeader1.Width = 170;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            this.columnHeader2.Width = 74;
             // 
             // panel3
             // 
@@ -124,7 +145,7 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.btnCheckOut);
             this.panel3.Location = new System.Drawing.Point(597, 476);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(469, 63);
             this.panel3.TabIndex = 0;
@@ -133,7 +154,7 @@
             // 
             this.cbSwitchTable.FormattingEnabled = true;
             this.cbSwitchTable.Location = new System.Drawing.Point(0, 33);
-            this.cbSwitchTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSwitchTable.Margin = new System.Windows.Forms.Padding(4);
             this.cbSwitchTable.Name = "cbSwitchTable";
             this.cbSwitchTable.Size = new System.Drawing.Size(97, 24);
             this.cbSwitchTable.TabIndex = 3;
@@ -141,7 +162,7 @@
             // btnSwitchTable
             // 
             this.btnSwitchTable.Location = new System.Drawing.Point(0, 0);
-            this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(4);
             this.btnSwitchTable.Name = "btnSwitchTable";
             this.btnSwitchTable.Size = new System.Drawing.Size(99, 31);
             this.btnSwitchTable.TabIndex = 5;
@@ -151,7 +172,7 @@
             // nmDisCount
             // 
             this.nmDisCount.Location = new System.Drawing.Point(289, 33);
-            this.nmDisCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmDisCount.Margin = new System.Windows.Forms.Padding(4);
             this.nmDisCount.Name = "nmDisCount";
             this.nmDisCount.Size = new System.Drawing.Size(88, 22);
             this.nmDisCount.TabIndex = 2;
@@ -160,7 +181,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(289, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 31);
             this.button1.TabIndex = 4;
@@ -170,7 +191,7 @@
             // btnCheckOut
             // 
             this.btnCheckOut.Location = new System.Drawing.Point(385, 0);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(84, 63);
             this.btnCheckOut.TabIndex = 3;
@@ -184,7 +205,7 @@
             this.panel4.Controls.Add(this.cbFood);
             this.panel4.Controls.Add(this.cbCategory);
             this.panel4.Location = new System.Drawing.Point(597, 33);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(469, 63);
             this.panel4.TabIndex = 1;
@@ -192,7 +213,7 @@
             // nmFoodCount
             // 
             this.nmFoodCount.Location = new System.Drawing.Point(420, 20);
-            this.nmFoodCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmFoodCount.Margin = new System.Windows.Forms.Padding(4);
             this.nmFoodCount.Minimum = new decimal(new int[] {
             100,
             0,
@@ -205,7 +226,7 @@
             // btnAddFood
             // 
             this.btnAddFood.Location = new System.Drawing.Point(328, 0);
-            this.btnAddFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddFood.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddFood.Name = "btnAddFood";
             this.btnAddFood.Size = new System.Drawing.Size(84, 63);
             this.btnAddFood.TabIndex = 2;
@@ -216,7 +237,7 @@
             // 
             this.cbFood.FormattingEnabled = true;
             this.cbFood.Location = new System.Drawing.Point(0, 33);
-            this.cbFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFood.Margin = new System.Windows.Forms.Padding(4);
             this.cbFood.Name = "cbFood";
             this.cbFood.Size = new System.Drawing.Size(319, 24);
             this.cbFood.TabIndex = 1;
@@ -225,7 +246,7 @@
             // 
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(0, 0);
-            this.cbCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(319, 24);
             this.cbCategory.TabIndex = 0;
@@ -234,10 +255,20 @@
             // 
             this.flpTable.AutoScroll = true;
             this.flpTable.Location = new System.Drawing.Point(16, 33);
-            this.flpTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flpTable.Margin = new System.Windows.Forms.Padding(4);
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(573, 506);
             this.flpTable.TabIndex = 3;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 108;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 162;
             // 
             // TableManager
             // 
@@ -250,7 +281,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý quán cà phê";
@@ -286,5 +317,9 @@
         private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.Button btnSwitchTable;
         private System.Windows.Forms.ComboBox cbSwitchTable;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

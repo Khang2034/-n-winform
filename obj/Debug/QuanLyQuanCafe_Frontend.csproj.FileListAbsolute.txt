@@ -1,0 +1,13 @@
+D:\Project\Winformapp\-n-winform\bin\Debug\WindowsFormsApp1.exe.config
+D:\Project\Winformapp\-n-winform\bin\Debug\WindowsFormsApp1.exe
+D:\Project\Winformapp\-n-winform\bin\Debug\WindowsFormsApp1.pdb
+D:\Project\Winformapp\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.AssemblyReference.cache
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.AccountProfile.resources
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.Admin.resources
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.Login.resources
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.TableManager.resources
+D:\Project\Winformapp\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.GenerateResource.cache
+D:\Project\Winformapp\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.exe
+D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.pdb

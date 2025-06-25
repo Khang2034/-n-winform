@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace WindowsFormsApp1.DTO
 {
     public class DataProvider
@@ -19,7 +20,7 @@ namespace WindowsFormsApp1.DTO
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=KUMALALA\\SQLEXPRESS;Initial Catalog=QuanLyQuanCafe;Integrated Security=True;";
+        private string connectionSTR = "Data Source=KUMALALA\\SQLEXPRESS;Initial Catalog=QuanLyQuanCafe;Integrated Security=True;";//chỉnh lại cho đúng máy của mình
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

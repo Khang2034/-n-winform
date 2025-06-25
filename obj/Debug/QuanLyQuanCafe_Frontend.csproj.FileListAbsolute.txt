@@ -11,3 +11,29 @@ D:\Project\Winformapp\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.Genera
 D:\Project\Winformapp\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
 D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.exe
 D:\Project\Winformapp\-n-winform\obj\Debug\WindowsFormsApp1.pdb
+D:\đồ án 1\-n-winform-source\bin\Debug\WindowsFormsApp1.exe.config
+D:\đồ án 1\-n-winform-source\bin\Debug\WindowsFormsApp1.exe
+D:\đồ án 1\-n-winform-source\bin\Debug\WindowsFormsApp1.pdb
+D:\đồ án 1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Frontend.csproj.AssemblyReference.cache
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.AccountProfile.resources
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.Admin.resources
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.Login.resources
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.TableManager.resources
+D:\đồ án 1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Frontend.csproj.GenerateResource.cache
+D:\đồ án 1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.exe
+D:\đồ án 1\-n-winform-source\obj\Debug\WindowsFormsApp1.pdb
+D:\Project\-n-winform\bin\Debug\WindowsFormsApp1.exe.config
+D:\Project\-n-winform\bin\Debug\WindowsFormsApp1.exe
+D:\Project\-n-winform\bin\Debug\WindowsFormsApp1.pdb
+D:\Project\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.AssemblyReference.cache
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.AccountProfile.resources
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.Admin.resources
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.Login.resources
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.TableManager.resources
+D:\Project\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.GenerateResource.cache
+D:\Project\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.exe
+D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.pdb

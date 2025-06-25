@@ -25,7 +25,7 @@ namespace WindowsFormsApp1.DAO
                            "FROM dbo.BillInfo AS bi " +
                            "JOIN dbo.Bill AS b ON bi.idbill = b.id " +
                            "JOIN dbo.Food AS f ON bi.idfood = f.id " +
-                           "WHERE b.idtable = " + id;
+                           "WHERE b.idtable = " + id + " AND b.status = 0";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 

@@ -21,11 +21,7 @@ namespace WindowsFormsApp1.DAO
         {
             List<Menu> listMenu = new List<Menu>();
 
-            string query = "SELECT f.name, bi.count, f.price, f.price * bi.count AS totalPrice " +
-                           "FROM dbo.BillInfo AS bi " +
-                           "JOIN dbo.Bill AS b ON bi.idbill = b.id " +
-                           "JOIN dbo.Food AS f ON bi.idfood = f.id " +
-                           "WHERE b.idtable = " + id + " AND b.status = 0";
+            string query = "SELECT f.name, bi.count, f.price, f.price*bi.count AS totalPrice FROM dbo.BillInfo AS bi, dbo.Bill AS b, dbo.Food AS f WHERE bi.idBill = b.id AND bi.idFood = f.id AND b.status = 0 AND b.idTable = " + id;
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 

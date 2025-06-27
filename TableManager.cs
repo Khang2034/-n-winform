@@ -42,6 +42,8 @@ namespace WindowsFormsApp1
 
         void LoadTable()
         {
+            flpTable.Controls.Clear();
+
             List<Table> tableList = TableDAO.Instance.LoadTableList();
             foreach (Table item in tableList)
             {
@@ -107,17 +109,6 @@ namespace WindowsFormsApp1
             Admin f = new Admin();
             f.ShowDialog();
         }
-        #endregion
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TableManager_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -153,11 +144,28 @@ namespace WindowsFormsApp1
             }
 
             showBill(table.ID);
+
+            LoadTable();
         }
 
-        private void lsvBill_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnCheckOut_Click(object sender, EventArgs e)
         {
+            Table table = lsvBill.Tag as Table;
 
+            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+
+            if (idBill != -1)
+            {
+                if  (MessageBox.Show("Bạn có chắc muốn thanh toán hóa đơn cho " + table.Name, "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BillDAO.Instance.CheckOut(idBill);
+                    showBill(table.ID);
+
+                    LoadTable();
+                }
+            }
         }
+
+        #endregion
     }
 }

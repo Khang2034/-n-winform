@@ -30,6 +30,12 @@ namespace WindowsFormsApp1.DAO
             return -1;
         }
 
+        public void CheckOut(int id)
+        {
+            string query = "UPDATE dbo.Bill set status = 1 where id = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
         public void InsertBill(int id)
         {
             DataProvider.Instance.ExecuteNonQuery("EXEC USP_InsertBill @idTable", new object[] { id });
@@ -44,7 +50,7 @@ namespace WindowsFormsApp1.DAO
             catch
             {
                 return 1;
-            }
+            }   
         }
     }
 }

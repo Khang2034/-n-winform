@@ -20,6 +20,12 @@ namespace WindowsFormsApp1.DAO
         public static int TableWidth = 90;
         public static int TableHeight = 90;
         private TableDAO() { }
+
+        public void SwitchTableStatus(int id1, int id2)
+        {
+            DataProvider.Instance.ExecuteNonQuery("USP_SwitchTable @idTable1, @idTable2", new object[] { id1, id2 });
+        }
+
         public List<Table> LoadTableList()
         {
             List<Table> tableList = new List<Table>();

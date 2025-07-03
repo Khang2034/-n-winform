@@ -78,10 +78,12 @@ namespace WindowsFormsApp1.DTO
                     {
                         if (item.Contains('@'))
                         {
-                            command.Parameters.AddWithValue(item, parameter[i]);
+                            string cleanItem = item.TrimEnd(','); // Remove trailing comma
+                            command.Parameters.AddWithValue(cleanItem, parameter[i]);
                             i++;
                         }
                     }
+
                 }
 
                 data = command.ExecuteNonQuery();

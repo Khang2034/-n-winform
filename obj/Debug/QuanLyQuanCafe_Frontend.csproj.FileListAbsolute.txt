@@ -37,3 +37,20 @@ D:\Project\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.GenerateResource.
 D:\Project\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
 D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.exe
 D:\Project\-n-winform\obj\Debug\WindowsFormsApp1.pdb
+D:\đồ án 1\-n-winform-source\bin\Debug\Guna.UI2.dll
+D:\đồ án 1\-n-winform-source\obj\Debug\QuanLyQu.DD9EE0CF.Up2Date
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\bin\Debug\WindowsFormsApp1.exe.config
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\bin\Debug\WindowsFormsApp1.exe
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\bin\Debug\WindowsFormsApp1.pdb
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\bin\Debug\Guna.UI2.dll
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Frontend.csproj.AssemblyReference.cache
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.AccountProfile.resources
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.Admin.resources
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.Login.resources
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.TableManager.resources
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Frontend.csproj.GenerateResource.cache
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\QuanLyQu.DD9EE0CF.Up2Date
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.exe
+D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.pdb

@@ -65,6 +65,8 @@ namespace WindowsFormsApp1
                 flpTable.Controls.Add(btn);
             }
         }
+
+
         void showBill(int id)
         {
             lsvBill.Items.Clear();
@@ -189,6 +191,16 @@ namespace WindowsFormsApp1
                 TableDAO.Instance.SwitchTableStatus(id1, id2);
             }
             LoadTable();
+        }
+
+        private void flpTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TableManager_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

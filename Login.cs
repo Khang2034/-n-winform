@@ -50,7 +50,7 @@ namespace WindowsFormsApp1
             return AccountDAO.Instance.Login(username, password);
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)//lỗi nhấn 2 lần xác nhận
         {
             Application.Exit();
         }
@@ -65,12 +65,57 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)//lỗi nhấn 2 lần xác nhận
         {
             if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
             {
                 e.Cancel = true;
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbPassword_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn(object sender, EventArgs e)
+        {
+
         }
     }
 }

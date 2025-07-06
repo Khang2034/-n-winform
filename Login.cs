@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.DTO;
 
@@ -16,106 +10,93 @@ namespace WindowsFormsApp1
         public Login()
         {
             InitializeComponent();
+
+            // 1) Parent the sign-up detail panel to the overlay container
+            guna2Panel_SignUp.Controls.Add(guna2Panel3);
+
+            // 2) Position the detail panel in the center of the overlay
+            guna2Panel3.Location = new Point(
+                (guna2Panel_SignUp.Width - guna2Panel3.Width) / 2,
+                (guna2Panel_SignUp.Height - guna2Panel3.Height) / 2
+            );
+
+            // 3) Initially hide the detail panel
+            guna2Panel3.Visible = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            guna2ShadowForm1.SetShadowForm(this);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txbUsername.Text;
-            string password = txbPassword.Text;
-            if (PerformLogin(username, password)) // Renamed method to avoid conflict  
+            var username = txbUsername.Text;
+            var password = txbPassword.Text;
+
+            if (AccountDAO.Instance.Login(username, password))
             {
-                TableManager f = new TableManager();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
+                using (var f = new TableManager())
+                {
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
             }
             else
             {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private bool PerformLogin(string username, string password) // Renamed method to avoid conflict  
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            return AccountDAO.Instance.Login(username, password);
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)//lỗi nhấn 2 lần xác nhận
-        {
-            Application.Exit();
-        }
-
-        private void txbPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)//lỗi nhấn 2 lần xác nhận
-        {
-            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo",
+                MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 e.Cancel = true;
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void label5_Click_1(object sender, EventArgs e)
         {
-
+            Cursor = Cursors.Hand;
+            // Start the fade-in overlay
+            guna2Panel_SignUp.FillColor = Color.FromArgb(0, 62, 93, 52);
+            guna2Panel_SignUp.Visible = true;
+            timer1.Start();
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
+            // Increase alpha until desired opacity, then show detail panel
+            if (guna2Panel_SignUp.FillColor.A >= 200)
+            {
+                timer1.Stop();
+                guna2Panel3.Visible = true;
+                return;
+            }
 
+            var newA = Math.Min(200, guna2Panel_SignUp.FillColor.A + 5);
+            guna2Panel_SignUp.FillColor = Color.FromArgb(newA, 62, 93, 52);
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            // Hide everything again
+            guna2Panel3.Visible = false;
+            guna2Panel_SignUp.Visible = false;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void guna2PictureBox8_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbPassword_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

@@ -32,7 +32,7 @@ namespace WindowsFormsApp1.DAO
 
         public void CheckOut(int id, int discount)
         {
-            string query = "UPDATE dbo.Bill set status = 1, " + "discount = " + discount + " where id = " + id;
+            string query = "UPDATE dbo.Bill set dateCheckOut = GETDATE(), status = 1, " + "discount = " + discount + " where id = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
         }
 

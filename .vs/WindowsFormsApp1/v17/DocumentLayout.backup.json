@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Project\\-n-winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +26,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAwFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T08:03:07.063Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillDAO.cs",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\DAO\\BillDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\BillDAO.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\DAO\\BillDAO.cs",
+              "RelativeToolTip": "DAO\\BillDAO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T08:58:29.592Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -50,54 +77,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TableManager.cs [Design]",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\TableManager.cs",
-              "RelativeDocumentMoniker": "TableManager.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\TableManager.cs [Design]",
-              "RelativeToolTip": "TableManager.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Login.Designer.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\Login.Designer.cs",
+              "RelativeToolTip": "Login.Designer.cs",
+              "ViewState": "AgIAAMQBAAAAAAAAAAApwOUBAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T06:26:07.871Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TableDAO.cs",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\DAO\\TableDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\TableDAO.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\DAO\\TableDAO.cs",
-              "RelativeToolTip": "DAO\\TableDAO.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvxwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T12:37:38.736Z",
+              "WhenOpened": "2025-07-06T05:23:43.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TableManager.cs",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\TableManager.cs",
-              "RelativeDocumentMoniker": "TableManager.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\TableManager.cs",
-              "RelativeToolTip": "TableManager.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAIwLsAAAANAAAAAAAAAA==",
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T12:36:41.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataProvider.cs",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\DAO\\DataProvider.cs",
-              "RelativeDocumentMoniker": "DAO\\DataProvider.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\DAO\\DataProvider.cs",
-              "RelativeToolTip": "DAO\\DataProvider.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAgwE0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T10:39:35.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T05:18:53.703Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

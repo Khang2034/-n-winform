@@ -54,3 +54,5 @@ D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\QuanLyQuanCafe_Fron
 D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\QuanLyQu.DD9EE0CF.Up2Date
 D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.exe
 D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.pdb
+D:\Project\-n-winform\bin\Debug\Guna.UI2.dll
+D:\Project\-n-winform\obj\Debug\QuanLyQu.DD9EE0CF.Up2Date

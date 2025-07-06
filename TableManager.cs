@@ -170,7 +170,7 @@ namespace WindowsFormsApp1
             {
                 if (MessageBox.Show(string.Format("Bạn có chắc muốn thanh toán hóa đơn cho {0}\nTổng tiền - (Tổng tiền / 100 ) x Giảm giá\n=> {1} - ({1} / 100) x {2} = {3}", table.Name, totalPrice, discount, finalTotalPrice), "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    BillDAO.Instance.CheckOut(idBill, discount);
+                    BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     showBill(table.ID);
 
                     LoadTable();

@@ -3,44 +3,35 @@
   "WorkspaceRootPath": "D:\\Project\\-n-winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|d:\\project\\-n-winform\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|D:\\Project\\-n-winform\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 221,
           "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAwFkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T08:03:07.063Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -63,39 +54,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.Designer.cs",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\Admin.Designer.cs",
+              "RelativeDocumentMoniker": "Admin.Designer.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\Admin.Designer.cs",
+              "RelativeToolTip": "Admin.Designer.cs",
+              "ViewState": "AgIAADUEAAAAAAAAAAAmwGQEAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:24:34.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\Admin.cs",
+              "RelativeDocumentMoniker": "Admin.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\Admin.cs",
+              "RelativeToolTip": "Admin.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T12:41:05.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BillDAO.cs",
               "DocumentMoniker": "D:\\Project\\-n-winform\\DAO\\BillDAO.cs",
               "RelativeDocumentMoniker": "DAO\\BillDAO.cs",
               "ToolTip": "D:\\Project\\-n-winform\\DAO\\BillDAO.cs",
               "RelativeToolTip": "DAO\\BillDAO.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwC0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T08:58:29.592Z",
+              "WhenOpened": "2025-07-06T10:32:56.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "Login.Designer.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\Login.Designer.cs",
-              "RelativeToolTip": "Login.Designer.cs",
-              "ViewState": "AgIAAMQBAAAAAAAAAAApwOUBAABYAAAAAAAAAA==",
+              "Title": "Admin.cs [Design]",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\Admin.cs",
+              "RelativeDocumentMoniker": "Admin.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\Admin.cs [Design]",
+              "RelativeToolTip": "Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T05:23:43.197Z"
+              "WhenOpened": "2025-07-06T12:39:52.92Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\Project\\-n-winform\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\Project\\-n-winform\\Login.cs [Design]",
-              "RelativeToolTip": "Login.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "TableManager.cs",
+              "DocumentMoniker": "D:\\Project\\-n-winform\\TableManager.cs",
+              "RelativeDocumentMoniker": "TableManager.cs",
+              "ToolTip": "D:\\Project\\-n-winform\\TableManager.cs",
+              "RelativeToolTip": "TableManager.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAmwKgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T05:18:53.703Z"
+              "WhenOpened": "2025-07-06T10:36:09.645Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 78,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

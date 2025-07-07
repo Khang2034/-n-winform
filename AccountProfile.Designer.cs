@@ -35,13 +35,13 @@
             this.txbDisplayName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txbPassoword = new System.Windows.Forms.TextBox();
+            this.txbPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbNewPass = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbReenterPass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -107,19 +107,20 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txbPassoword);
+            this.panel3.Controls.Add(this.txbPassword);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(9, 106);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(435, 41);
             this.panel3.TabIndex = 3;
             // 
-            // txbPassoword
+            // txbPassword
             // 
-            this.txbPassoword.Location = new System.Drawing.Point(133, 8);
-            this.txbPassoword.Name = "txbPassoword";
-            this.txbPassoword.Size = new System.Drawing.Size(296, 20);
-            this.txbPassoword.TabIndex = 1;
+            this.txbPassword.Location = new System.Drawing.Point(133, 8);
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.Size = new System.Drawing.Size(296, 20);
+            this.txbPassword.TabIndex = 1;
+            this.txbPassword.TextChanged += new System.EventHandler(this.txbPassoword_TextChanged);
             // 
             // label3
             // 
@@ -133,19 +134,19 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.txbNewPass);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(9, 153);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(435, 41);
             this.panel4.TabIndex = 4;
             // 
-            // textBox1
+            // txbNewPass
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 20);
-            this.textBox1.TabIndex = 1;
+            this.txbNewPass.Location = new System.Drawing.Point(133, 8);
+            this.txbNewPass.Name = "txbNewPass";
+            this.txbNewPass.Size = new System.Drawing.Size(296, 20);
+            this.txbNewPass.TabIndex = 1;
             // 
             // label4
             // 
@@ -159,19 +160,19 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.txbReenterPass);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(9, 200);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(435, 41);
             this.panel5.TabIndex = 5;
             // 
-            // textBox2
+            // txbReenterPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 20);
-            this.textBox2.TabIndex = 1;
+            this.txbReenterPass.Location = new System.Drawing.Point(133, 8);
+            this.txbReenterPass.Name = "txbReenterPass";
+            this.txbReenterPass.Size = new System.Drawing.Size(296, 20);
+            this.txbReenterPass.TabIndex = 1;
             // 
             // label5
             // 
@@ -201,6 +202,7 @@
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AccountProfile
             // 
@@ -242,13 +244,13 @@
         private System.Windows.Forms.TextBox txbDisplayName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txbPassoword;
+        private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbNewPass;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbReenterPass;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnUpdate;

@@ -18,13 +18,17 @@ namespace WindowsFormsApp1
     {
         public Admin()
         {
+            InitializeComponent();
+
+            Load();
+        }
+
+        void Load()
+        {
             // Thiết lập culture tiếng Việt
             CultureInfo vietnameseCulture = new CultureInfo("vi-VN");
             System.Threading.Thread.CurrentThread.CurrentCulture = vietnameseCulture;
             System.Threading.Thread.CurrentThread.CurrentUICulture = vietnameseCulture;
-
-            InitializeComponent();
-
             LoadDataTimePickerBill();
             // Thiết lập định dạng ngày tháng cho DateTimePicker
             dtpkFromDate.Format = DateTimePickerFormat.Custom;
@@ -33,6 +37,8 @@ namespace WindowsFormsApp1
             dtpkToDate.CustomFormat = "dd/MM/yyyy";
 
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
+
+            LoadListFood();
         }
 
         #region Methods
@@ -47,6 +53,11 @@ namespace WindowsFormsApp1
         {
             dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
         }
+
+        void LoadListFood()
+        {
+            dtgvFood.DataSource = FoodDAO.Instance.GetListFood();
+        }
         #endregion
 
         #region Events
@@ -55,5 +66,10 @@ namespace WindowsFormsApp1
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
         }
         #endregion
+
+        private void btnShowFood_Click(object sender, EventArgs e)
+        {
+            LoadListFood();
+        }
     }
 }

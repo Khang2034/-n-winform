@@ -36,8 +36,11 @@ namespace WindowsFormsApp1
 
             if (AccountDAO.Instance.Login(username, password))
             {
-                using (var f = new TableManager())
+
+                Account loginAccount = AccountDAO.Instance.GetAccountByUserName(username);
+                using (var f = new TableManager(loginAccount))
                 {
+
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

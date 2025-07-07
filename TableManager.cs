@@ -11,14 +11,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.DAO;
 using WindowsFormsApp1.DTO;
+using static WindowsFormsApp1.AccountProfile;
 
 namespace WindowsFormsApp1
 {
     public partial class TableManager : Form
     {
-        public TableManager()
+        private Account _loginAccount;
+
+        public Account LoginAccount
+        {
+            get { return _loginAccount; }
+            set { _loginAccount = value; ChangeAccount(_loginAccount.Type); }
+        }
+
+        public TableManager(Account acc)
         {
             InitializeComponent();
+
+            this.LoginAccount = acc; // gọi setter → tự đổi _loginAccount và chạy ChangeAccount
+
 
             LoadTable();
             LoadCategory();
@@ -26,6 +38,12 @@ namespace WindowsFormsApp1
         }
 
         #region Method
+
+        void ChangeAccount(int type)
+        {
+            adminToolStripMenuItem.Enabled = type == 1; // Chỉ hiển thị Admin nếu là tài khoản Admin
+            thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản (" + LoginAccount.DisplayName + ")";
+        }
 
         void LoadCategory()
         {
@@ -108,9 +126,16 @@ namespace WindowsFormsApp1
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AccountProfile f = new AccountProfile();
+            AccountProfile f = new AccountProfile(LoginAccount);
+            f.UpdateAccount += f_UpdateAccount;
             f.ShowDialog();
         }
+        void f_UpdateAccount(object sender, AccountEvent e)
+        {
+            LoginAccount = e.Acc; // cập nhật lại thông tin đăng nhập (bao gồm DisplayName mới)
+            thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản (" + e.Acc.DisplayName + ")";
+        }
+
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -199,6 +224,11 @@ namespace WindowsFormsApp1
         }
 
         private void TableManager_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

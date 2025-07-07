@@ -32,5 +32,18 @@ namespace WindowsFormsApp1.DAO
             }
             return listFood;
         }
+
+        public List<DTO.Food> GetListFood()
+        {
+            List<DTO.Food> listFood = new List<DTO.Food>();
+            string query = "SELECT * FROM dbo.Food";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                DTO.Food food = new DTO.Food(item);
+                listFood.Add(food);
+            }
+            return listFood;
+        }
     }
 }

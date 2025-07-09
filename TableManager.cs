@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,28 +62,36 @@ namespace WindowsFormsApp1
         void LoadTable()
         {
             flpTable.Controls.Clear();
-
             List<Table> tableList = TableDAO.Instance.LoadTableList();
             foreach (Table item in tableList)
             {
-                Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
-                btn.Text = item.Name + Environment.NewLine + item.Status;
-                btn.Click += btn_Click;
-                btn.Tag = item;
-
-                switch (item.Status)
+                Button btn = new Button()
                 {
-                    case "Trống":
-                        btn.BackColor = Color.Aqua;
-                        break;
-                    default:
-                        btn.BackColor = Color.LightPink;
-                        break;
+                    Width = TableDAO.TableWidth,
+                    Height = TableDAO.TableHeight,
+                    Text = item.Name + Environment.NewLine + item.Status,
+                    Tag = item,
+                    TextAlign = ContentAlignment.BottomCenter,
+                    TextImageRelation = TextImageRelation.TextAboveImage,
+                    FlatStyle = FlatStyle.Flat,
+                    Font = new Font("Segoe UI", 9F, FontStyle.Bold),
+                    ForeColor = Color.Black
+                };
+                btn.Click += btn_Click;
+                if (item.Status == "Trống")
+                {
+                    btn.BackColor = Color.AliceBlue;
+                    btn.BackgroundImage = Properties.Resources.emptyTable;
                 }
+                else
+                {
+                    btn.BackColor = Color.MistyRose;
+                    btn.BackgroundImage = Properties.Resources.fillTable;
+                }
+                btn.BackgroundImageLayout = ImageLayout.Zoom;
                 flpTable.Controls.Add(btn);
             }
         }
-
 
         void showBill(int id)
         {
@@ -216,21 +224,6 @@ namespace WindowsFormsApp1
                 TableDAO.Instance.SwitchTableStatus(id1, id2);
             }
             LoadTable();
-        }
-
-        private void flpTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TableManager_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

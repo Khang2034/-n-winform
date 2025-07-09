@@ -129,6 +129,80 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\Login\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login\Login_In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login\Logo_Cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login\verify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TableManager\emptyTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TableManager\fillTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\Americano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\BacXiu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\BanhPhoMaiNhat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\BanhTiramisuMini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\CafeDenDa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\CafeDenSua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\CaPheMuoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\CaPheTrung.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\Cappuccino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\CaramelMacchiato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\EspressoSingle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\Latte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\TraChanhSaMatOng.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\TraDaoCamSa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\TraSenVang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Food\TraVaiHoaHong.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

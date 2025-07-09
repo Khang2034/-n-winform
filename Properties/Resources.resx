@@ -117,4 +117,59 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Americano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\Americano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BacXiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\BacXiu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BanhPhoMaiNhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\BanhPhoMaiNhat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BanhTiramisuMini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\BanhTiramisuMini.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CafeDenDa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\CafeDenDa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CafeDenSua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\CafeDenSua.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaPheMuoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\CaPheMuoi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaPheTrung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\CaPheTrung.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cappuccino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\Cappuccino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaramelMacchiato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\CaramelMacchiato.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emptyTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TableManager\emptyTable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EspressoSingle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\EspressoSingle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fillTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TableManager\fillTable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Latte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\Latte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraChanhSaMatOng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\TraChanhSaMatOng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraDaoCamSa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\TraDaoCamSa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraSenVang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\TraSenVang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraVaiHoaHong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Food\TraVaiHoaHong.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

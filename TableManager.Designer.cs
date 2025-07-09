@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableManager));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,12 +53,17 @@
             this.cbFood = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.pbxFood = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnRemoveSelectedFood = new Guna.UI2.WinForms.Guna2ImageButton();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmDisCount)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFood)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -69,7 +75,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1424, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1424, 29);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -107,7 +113,7 @@
             // 
             this.panel2.Controls.Add(this.lsvBill);
             this.panel2.Location = new System.Drawing.Point(597, 103);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(469, 366);
             this.panel2.TabIndex = 1;
@@ -122,7 +128,7 @@
             this.lsvBill.GridLines = true;
             this.lsvBill.HideSelection = false;
             this.lsvBill.Location = new System.Drawing.Point(0, 1);
-            this.lsvBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsvBill.Margin = new System.Windows.Forms.Padding(4);
             this.lsvBill.Name = "lsvBill";
             this.lsvBill.Size = new System.Drawing.Size(469, 363);
             this.lsvBill.TabIndex = 0;
@@ -157,7 +163,7 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.btnCheckOut);
             this.panel3.Location = new System.Drawing.Point(597, 476);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(469, 63);
             this.panel3.TabIndex = 0;
@@ -167,7 +173,7 @@
             this.txbTotalPrice.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txbTotalPrice.ForeColor = System.Drawing.Color.OrangeRed;
             this.txbTotalPrice.Location = new System.Drawing.Point(203, 20);
-            this.txbTotalPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbTotalPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txbTotalPrice.Name = "txbTotalPrice";
             this.txbTotalPrice.Size = new System.Drawing.Size(173, 29);
             this.txbTotalPrice.TabIndex = 6;
@@ -178,7 +184,7 @@
             // 
             this.cbSwitchTable.FormattingEnabled = true;
             this.cbSwitchTable.Location = new System.Drawing.Point(0, 33);
-            this.cbSwitchTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSwitchTable.Margin = new System.Windows.Forms.Padding(4);
             this.cbSwitchTable.Name = "cbSwitchTable";
             this.cbSwitchTable.Size = new System.Drawing.Size(97, 24);
             this.cbSwitchTable.TabIndex = 3;
@@ -186,7 +192,7 @@
             // btnSwitchTable
             // 
             this.btnSwitchTable.Location = new System.Drawing.Point(0, 0);
-            this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(4);
             this.btnSwitchTable.Name = "btnSwitchTable";
             this.btnSwitchTable.Size = new System.Drawing.Size(99, 31);
             this.btnSwitchTable.TabIndex = 5;
@@ -197,7 +203,7 @@
             // nmDisCount
             // 
             this.nmDisCount.Location = new System.Drawing.Point(107, 33);
-            this.nmDisCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmDisCount.Margin = new System.Windows.Forms.Padding(4);
             this.nmDisCount.Name = "nmDisCount";
             this.nmDisCount.Size = new System.Drawing.Size(88, 22);
             this.nmDisCount.TabIndex = 2;
@@ -206,7 +212,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(107, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 31);
             this.button1.TabIndex = 4;
@@ -216,7 +222,7 @@
             // btnCheckOut
             // 
             this.btnCheckOut.Location = new System.Drawing.Point(385, 0);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(84, 63);
             this.btnCheckOut.TabIndex = 3;
@@ -231,7 +237,7 @@
             this.panel4.Controls.Add(this.cbFood);
             this.panel4.Controls.Add(this.cbCategory);
             this.panel4.Location = new System.Drawing.Point(597, 33);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(469, 63);
             this.panel4.TabIndex = 1;
@@ -239,7 +245,7 @@
             // nmFoodCount
             // 
             this.nmFoodCount.Location = new System.Drawing.Point(420, 20);
-            this.nmFoodCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmFoodCount.Margin = new System.Windows.Forms.Padding(4);
             this.nmFoodCount.Minimum = new decimal(new int[] {
             100,
             0,
@@ -257,7 +263,7 @@
             // btnAddFood
             // 
             this.btnAddFood.Location = new System.Drawing.Point(328, 0);
-            this.btnAddFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddFood.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddFood.Name = "btnAddFood";
             this.btnAddFood.Size = new System.Drawing.Size(84, 63);
             this.btnAddFood.TabIndex = 2;
@@ -269,16 +275,17 @@
             // 
             this.cbFood.FormattingEnabled = true;
             this.cbFood.Location = new System.Drawing.Point(0, 33);
-            this.cbFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbFood.Margin = new System.Windows.Forms.Padding(4);
             this.cbFood.Name = "cbFood";
             this.cbFood.Size = new System.Drawing.Size(319, 24);
             this.cbFood.TabIndex = 1;
+            this.cbFood.SelectedIndexChanged += new System.EventHandler(this.cbFood_SelectedIndexChanged);
             // 
             // cbCategory
             // 
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(0, 0);
-            this.cbCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(319, 24);
             this.cbCategory.TabIndex = 0;
@@ -288,16 +295,65 @@
             // 
             this.flpTable.AutoScroll = true;
             this.flpTable.Location = new System.Drawing.Point(16, 33);
-            this.flpTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flpTable.Margin = new System.Windows.Forms.Padding(4);
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(573, 506);
             this.flpTable.TabIndex = 3;
+            // 
+            // pbxFood
+            // 
+            this.pbxFood.ImageRotate = 0F;
+            this.pbxFood.Location = new System.Drawing.Point(1088, 132);
+            this.pbxFood.Name = "pbxFood";
+            this.pbxFood.Size = new System.Drawing.Size(300, 205);
+            this.pbxFood.TabIndex = 4;
+            this.pbxFood.TabStop = false;
+            this.pbxFood.Click += new System.EventHandler(this.pbxFood_Click);
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescription.Location = new System.Drawing.Point(1187, 406);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(108, 18);
+            this.lblDescription.TabIndex = 5;
+            this.lblDescription.Text = "guna2HtmlLabel1";
+            this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrice.Location = new System.Drawing.Point(1187, 451);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(108, 18);
+            this.lblPrice.TabIndex = 6;
+            this.lblPrice.Text = "guna2HtmlLabel2";
+            this.lblPrice.Click += new System.EventHandler(this.lblPrice_Click);
+            // 
+            // btnRemoveSelectedFood
+            // 
+            this.btnRemoveSelectedFood.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRemoveSelectedFood.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRemoveSelectedFood.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveSelectedFood.Image")));
+            this.btnRemoveSelectedFood.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnRemoveSelectedFood.ImageRotate = 0F;
+            this.btnRemoveSelectedFood.Location = new System.Drawing.Point(1073, 32);
+            this.btnRemoveSelectedFood.Name = "btnRemoveSelectedFood";
+            this.btnRemoveSelectedFood.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnRemoveSelectedFood.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnRemoveSelectedFood.Size = new System.Drawing.Size(72, 94);
+            this.btnRemoveSelectedFood.TabIndex = 7;
+            this.btnRemoveSelectedFood.Click += new System.EventHandler(this.btnRemoveSelectedFood_Click);
             // 
             // TableManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 730);
+            this.Controls.Add(this.btnRemoveSelectedFood);
+            this.Controls.Add(this.lblPrice);
+            this.Controls.Add(this.lblDescription);
+            this.Controls.Add(this.pbxFood);
             this.Controls.Add(this.flpTable);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -305,7 +361,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
@@ -317,6 +373,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmDisCount)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFood)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,5 +404,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.TextBox txbTotalPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox pbxFood;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDescription;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPrice;
+        private Guna.UI2.WinForms.Guna2ImageButton btnRemoveSelectedFood;
     }
 }

@@ -1,59 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.DTO
 {
     public class Food
     {
-        public Food(int id, string name, float price, int categoryId)
+        public Food(int id, string name, float price, int categoryId, string description = null, byte[] image = null)
         {
-            this.Id = id;
-            this.Name = name;
-            this.Price = price;
-            this.CategoryId = categoryId;
+            Id = id;
+            Name = name;
+            Price = price;
+            CategoryId = categoryId;
+            Description = description;
+            Image = image;
         }
+
         public Food(DataRow row)
         {
-            this.Id = (int)row["id"];
-            this.Name = row["name"].ToString();
-            this.Price = (float)Convert.ToDouble(row["price"].ToString());
-            this.CategoryId = (int)row["idCategory"];
+            Id = (int)row["id"];
+            Name = row["name"].ToString();
+            Price = Convert.ToSingle(row["price"]);
+            CategoryId = (int)row["idCategory"];
+
+            if (row.Table.Columns.Contains("description") && row["description"] != DBNull.Value)
+                Description = row["description"].ToString();
+
+            if (row.Table.Columns.Contains("image") && row["image"] != DBNull.Value)
+                Image = (byte[])row["image"];
         }
 
-        private float price;
-
-        public float Price
-        {
-            get { return price; }
-            set { price = value; }
-        }
-
-        private int categoryId;
-
-        public int CategoryId
-        {
-            get { return categoryId; }
-            set { categoryId = value; }
-        }
-
-        private string name;
-
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-
-        private int id;
-
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Price { get; set; }
+        public int CategoryId { get; set; }
+        public string Description { get; set; }
+        public byte[] Image { get; set; }
     }
 }

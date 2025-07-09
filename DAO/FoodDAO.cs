@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WindowsFormsApp1.DTO;
 
 namespace WindowsFormsApp1.DAO
@@ -11,38 +7,31 @@ namespace WindowsFormsApp1.DAO
     public class FoodDAO
     {
         private static FoodDAO instance;
-
-        public static FoodDAO Instance
-        {
-            get { if (instance == null) instance = new FoodDAO(); return FoodDAO.instance; }
-            private set { FoodDAO.instance = value; }
-        }
+        public static FoodDAO Instance => instance ?? (instance = new FoodDAO());
 
         private FoodDAO() { }
 
-        public List<DTO.Food> GetListFoodByCategory(int id)
+        public List<Food> GetListFoodByCategory(int id)
         {
-            List<DTO.Food> listFood = new List<DTO.Food>();
-            string query = "SELECT * FROM dbo.Food WHERE idcategory = " + id;//không biết có cần dbo. không
+            List<Food> listFood = new List<Food>();
+            string query = $"SELECT * FROM dbo.Food WHERE idCategory = {id}";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            foreach (DataRow item in data.Rows)
-            {
-                DTO.Food food = new DTO.Food(item);
-                listFood.Add(food);
-            }
+
+            foreach (DataRow row in data.Rows)
+                listFood.Add(new Food(row));
+
             return listFood;
         }
 
-        public List<DTO.Food> GetListFood()
+        public List<Food> GetListFood()
         {
-            List<DTO.Food> listFood = new List<DTO.Food>();
+            List<Food> listFood = new List<Food>();
             string query = "SELECT * FROM dbo.Food";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            foreach (DataRow item in data.Rows)
-            {
-                DTO.Food food = new DTO.Food(item);
-                listFood.Add(food);
-            }
+
+            foreach (DataRow row in data.Rows)
+                listFood.Add(new Food(row));
+
             return listFood;
         }
     }

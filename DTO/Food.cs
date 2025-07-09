@@ -17,16 +17,22 @@ namespace WindowsFormsApp1.DTO
 
         public Food(DataRow row)
         {
-            Id = (int)row["id"];
+            Id = Convert.ToInt32(row["id"]);
             Name = row["name"].ToString();
             Price = Convert.ToSingle(row["price"]);
-            CategoryId = (int)row["idCategory"];
+            CategoryId = Convert.ToInt32(row["idCategory"]);
 
-            if (row.Table.Columns.Contains("description") && row["description"] != DBNull.Value)
-                Description = row["description"].ToString();
+            Description = row.Table.Columns.Contains("description") && row["description"] != DBNull.Value
+                ? row["description"].ToString()
+                : "";
 
-            if (row.Table.Columns.Contains("image") && row["image"] != DBNull.Value)
-                Image = (byte[])row["image"];
+            ResourceName = row.Table.Columns.Contains("resourcename") && row["resourcename"] != DBNull.Value
+                ? row["resourcename"].ToString()
+                : "";
+
+            Image = row.Table.Columns.Contains("image") && row["image"] != DBNull.Value
+                ? (byte[])row["image"]
+                : null;
         }
 
         public int Id { get; set; }
@@ -34,6 +40,7 @@ namespace WindowsFormsApp1.DTO
         public float Price { get; set; }
         public int CategoryId { get; set; }
         public string Description { get; set; }
+        public string ResourceName { get; set; }
         public byte[] Image { get; set; }
     }
 }

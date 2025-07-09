@@ -75,7 +75,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1424, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1551, 29);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -112,7 +112,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lsvBill);
-            this.panel2.Location = new System.Drawing.Point(597, 103);
+            this.panel2.Location = new System.Drawing.Point(1069, 176);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(469, 366);
@@ -162,7 +162,7 @@
             this.panel3.Controls.Add(this.nmDisCount);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.btnCheckOut);
-            this.panel3.Location = new System.Drawing.Point(597, 476);
+            this.panel3.Location = new System.Drawing.Point(1069, 550);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(469, 63);
@@ -236,7 +236,7 @@
             this.panel4.Controls.Add(this.btnAddFood);
             this.panel4.Controls.Add(this.cbFood);
             this.panel4.Controls.Add(this.cbCategory);
-            this.panel4.Location = new System.Drawing.Point(597, 33);
+            this.panel4.Location = new System.Drawing.Point(568, 106);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(469, 63);
@@ -294,41 +294,42 @@
             // flpTable
             // 
             this.flpTable.AutoScroll = true;
-            this.flpTable.Location = new System.Drawing.Point(16, 33);
+            this.flpTable.Location = new System.Drawing.Point(13, 106);
             this.flpTable.Margin = new System.Windows.Forms.Padding(4);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(573, 506);
+            this.flpTable.Size = new System.Drawing.Size(537, 506);
             this.flpTable.TabIndex = 3;
             // 
             // pbxFood
             // 
             this.pbxFood.ImageRotate = 0F;
-            this.pbxFood.Location = new System.Drawing.Point(1088, 132);
+            this.pbxFood.Location = new System.Drawing.Point(568, 176);
             this.pbxFood.Name = "pbxFood";
-            this.pbxFood.Size = new System.Drawing.Size(300, 205);
+            this.pbxFood.Size = new System.Drawing.Size(469, 320);
+            this.pbxFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxFood.TabIndex = 4;
             this.pbxFood.TabStop = false;
-            this.pbxFood.Click += new System.EventHandler(this.pbxFood_Click);
             // 
             // lblDescription
             // 
+            this.lblDescription.AutoSize = false;
             this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.Location = new System.Drawing.Point(1187, 406);
+            this.lblDescription.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(614, 511);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(108, 18);
+            this.lblDescription.Size = new System.Drawing.Size(354, 102);
             this.lblDescription.TabIndex = 5;
             this.lblDescription.Text = "guna2HtmlLabel1";
-            this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
             // 
             // lblPrice
             // 
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Location = new System.Drawing.Point(1187, 451);
+            this.lblPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(614, 637);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(108, 18);
+            this.lblPrice.Size = new System.Drawing.Size(177, 28);
             this.lblPrice.TabIndex = 6;
             this.lblPrice.Text = "guna2HtmlLabel2";
-            this.lblPrice.Click += new System.EventHandler(this.lblPrice_Click);
             // 
             // btnRemoveSelectedFood
             // 
@@ -337,11 +338,11 @@
             this.btnRemoveSelectedFood.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveSelectedFood.Image")));
             this.btnRemoveSelectedFood.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnRemoveSelectedFood.ImageRotate = 0F;
-            this.btnRemoveSelectedFood.Location = new System.Drawing.Point(1073, 32);
+            this.btnRemoveSelectedFood.Location = new System.Drawing.Point(1044, 94);
             this.btnRemoveSelectedFood.Name = "btnRemoveSelectedFood";
             this.btnRemoveSelectedFood.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnRemoveSelectedFood.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnRemoveSelectedFood.Size = new System.Drawing.Size(72, 94);
+            this.btnRemoveSelectedFood.Size = new System.Drawing.Size(72, 75);
             this.btnRemoveSelectedFood.TabIndex = 7;
             this.btnRemoveSelectedFood.Click += new System.EventHandler(this.btnRemoveSelectedFood_Click);
             // 
@@ -349,16 +350,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 730);
-            this.Controls.Add(this.btnRemoveSelectedFood);
+            this.ClientSize = new System.Drawing.Size(1551, 800);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.pbxFood);
             this.Controls.Add(this.flpTable);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.btnRemoveSelectedFood);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);

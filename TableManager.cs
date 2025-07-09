@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -38,6 +40,41 @@ namespace WindowsFormsApp1
         }
 
         #region Method
+
+        private Image GetFoodImageFromResource(string resourceName)
+        {
+            if (string.IsNullOrWhiteSpace(resourceName))
+                return null;
+
+            var prop = typeof(Properties.Resources).GetProperty(resourceName, BindingFlags.Static | BindingFlags.Public | BindingFlags.IgnoreCase);
+
+            if (prop == null)
+            {
+                MessageBox.Show($"Không tìm thấy resource: {resourceName}");
+                return null;
+            }
+
+            var value = prop.GetValue(null);
+
+            if (value is byte[] imageBytes)
+            {
+                using (var ms = new MemoryStream(imageBytes))
+                {
+                    return Image.FromStream(ms);
+                }
+            }
+
+            if (value is Image img)
+            {
+                return img;
+            }
+
+            MessageBox.Show($"Resource '{resourceName}' không phải là Image hoặc byte[]");
+            return null;
+        }
+
+
+
 
         void ChangeAccount(int type)
         {
@@ -237,42 +274,18 @@ namespace WindowsFormsApp1
             LoadTable();
         }
 
-        private void pbxFood_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDescription_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbFood_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbFood.SelectedItem is DTO.Food selectedFood)
             {
                 lblDescription.Text = selectedFood.Description ?? "Không có mô tả";
-
                 lblPrice.Text = selectedFood.Price.ToString("c0", new CultureInfo("vi-VN"));
 
-                if (selectedFood.Image != null)
-                {
-                    using (var ms = new System.IO.MemoryStream(selectedFood.Image))
-                    {
-                        pbxFood.Image = Image.FromStream(ms);
-                    }
-                }
-                else
-                {
-                    pbxFood.Image = null;
-                }
+                pbxFood.Image = GetFoodImageFromResource(selectedFood.ResourceName);
             }
         }
+        
+
 
         private void btnRemoveSelectedFood_Click(object sender, EventArgs e)
         {
@@ -312,6 +325,5 @@ namespace WindowsFormsApp1
             showBill(table.ID);
             LoadTable();
         }
-        
     }
 }

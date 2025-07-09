@@ -1,4 +1,4 @@
-# Đồ án Quản lý thư viện (WinForms + SQL Server)
+# Đồ án Quản lý cafe (WinForms + SQL Server)
 
 ## 📁 Cấu trúc
 - `WindowsFormsApp1/` – Mã nguồn ứng dụng

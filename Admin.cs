@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
 {
     public partial class Admin : Form
     {
+        BindingSource foodList = new BindingSource();
         public Admin()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace WindowsFormsApp1
 
         void Load()
         {
+            dtgvFood.DataSource = foodList;
             // Thiết lập culture tiếng Việt
             CultureInfo vietnameseCulture = new CultureInfo("vi-VN");
             System.Threading.Thread.CurrentThread.CurrentCulture = vietnameseCulture;
@@ -39,6 +41,10 @@ namespace WindowsFormsApp1
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
 
             LoadListFood();
+
+            LoadCategoryInfoComboBox(cbFoodCategory);
+
+            AddFoodBinding();
         }
 
         #region Methods
@@ -54,22 +60,61 @@ namespace WindowsFormsApp1
             dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
         }
 
+
+        void AddFoodBinding()
+        {
+            txbFoodName.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "Name"));
+            txbFoodID.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID"));
+            nmFoodPrice.DataBindings.Add(new Binding("Value", dtgvFood.DataSource, "Price"));
+        }
+
+        void LoadCategoryInfoComboBox(ComboBox cb)
+        {
+            cb.DataSource = CategoryDAO.Instance.GetListCategory();
+            cb.DisplayMember = "Name"; // Tên hiển thị trong ComboBox
+        }
         void LoadListFood()
         {
-            dtgvFood.DataSource = FoodDAO.Instance.GetListFood();
+            foodList.DataSource = FoodDAO.Instance.GetListFood();
         }
         #endregion
 
         #region Events
+
+        private void btnShowFood_Click(object sender, EventArgs e)
+        {
+            LoadListFood();
+        }
+
         private void btnViewBill_Click(object sender, EventArgs e)
         {
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
         }
         #endregion
 
-        private void btnShowFood_Click(object sender, EventArgs e)
+        private void txbFoodID_TextChanged(object sender, EventArgs e)
         {
-            LoadListFood();
+            if (dtgvFood.SelectedCells.Count > 0)
+            {
+                int id = (int)dtgvFood.SelectedCells[0].OwningRow.Cells["CategoryID"].Value;
+               
+                Category category = CategoryDAO.Instance.GetCategoryByID(id);
+
+                cbFoodCategory.SelectedItem = category;
+                
+                int index = -1;
+                int i = 0;
+                foreach (Category item in cbFoodCategory.Items)
+                {
+                    if (item.Id == category.Id)
+                    {
+                        index = i;
+                        break;
+                    }
+                    i++;
+                }
+                cbFoodCategory.SelectedIndex = index;
+            }
         }
     }
 }

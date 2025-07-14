@@ -185,8 +185,36 @@ namespace WindowsFormsApp1
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Admin f = new Admin();
+
+            f.InsertFood += f_InsertFood;
+            f.DeleteFood += f_DeleteFood;
+            f.UpdateFood += f_UpdateFood;
+
             f.ShowDialog();
         }
+
+        void f_InsertFood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).Id);
+            if (lsvBill.Tag == null)
+                showBill((lsvBill.Tag as Table).ID);
+        }
+
+        void f_DeleteFood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).Id);
+            if (lsvBill.Tag == null)
+                showBill((lsvBill.Tag as Table).ID);
+            LoadTable();
+        }
+
+        void f_UpdateFood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).Id);
+            if (lsvBill.Tag == null)
+                showBill((lsvBill.Tag as Table).ID);
+        }
+
 
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using WindowsFormsApp1.DTO;
 
 namespace WindowsFormsApp1.DAO
@@ -34,5 +35,31 @@ namespace WindowsFormsApp1.DAO
 
             return listFood;
         }
+
+        public bool InsertFood(string name, int id, float price)
+        {
+            string query = string.Format("INSERT dbo.Food (name, idCategory, price) VALUES (N'{0}', {1}, {2})", name, id, price);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+        public bool UpdateFood(int idFood, string name, int id, float price)
+        {
+            string query = string.Format("UPDATE dbo.Food SET name = N'{0}', idCategory = {1}, price = {2} where id = {3}", name, id, price, idFood);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;  
+        }
+        
+        public bool DeleteFood(int idFood)
+        {
+            BillInfoDao.Instance.DeleteBillInfoByFoodId(idFood);
+                
+            string query = string.Format("DELETE Food where id = {0}", idFood);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+        
     }
 }

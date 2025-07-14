@@ -30,6 +30,11 @@ namespace WindowsFormsApp1.DAO
             return listBillInfo;
         }
 
+        public void DeleteBillInfoByFoodId(int id)
+        {
+            DataProvider.Instance.ExecuteNonQuery("DELETE dbo.BillInfo WHERE idFood = " + id);
+        }
+
         public void InsertBillInfo(int idBill, int idFood, int count)
         {
             DataProvider.Instance.ExecuteNonQuery("EXEC USP_InsertBillInfo @idBill , @idFood , @count", new object[] { idBill, idFood, count });

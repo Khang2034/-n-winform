@@ -48,6 +48,13 @@ namespace WindowsFormsApp1
         }
 
         #region Methods
+
+        List<Food> SearchFoodByName(string name)
+        {
+            List<Food> listFood = FoodDAO.Instance.SearchFoodByName(name);
+
+            return listFood;
+        }
         void LoadDataTimePickerBill()
         {
             DateTime today = DateTime.Now;
@@ -80,6 +87,11 @@ namespace WindowsFormsApp1
         #endregion
 
         #region Events
+
+        private void btnSearchFood_Click(object sender, EventArgs e)
+        {
+            foodList.DataSource = SearchFoodByName(txbSearchFoodName.Text);
+        }
 
         private void btnShowFood_Click(object sender, EventArgs e)
         {
@@ -196,11 +208,6 @@ namespace WindowsFormsApp1
         {
             add { updateFood += value; }
             remove { updateFood -= value; }
-        }
-
-        private void btnSearchFood_Click(object sender, EventArgs e)
-        {
-
         }
         #endregion
     }

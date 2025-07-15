@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using WindowsFormsApp1.DTO;
 
@@ -35,6 +36,24 @@ namespace WindowsFormsApp1.DAO
 
             return listFood;
         }
+
+        public List<Food> SearchFoodByName(string name)
+        {
+            List<Food> list = new List<Food>();
+
+            string query = "SELECT * FROM Food WHERE dbo.fuConvertToUnsign(name) LIKE @name";
+            object[] parameter = new object[] { "%" + name + "%" };
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, parameter);
+
+            foreach (DataRow item in data.Rows)
+                list.Add(new Food(item));
+
+            return list;
+        }
+
+
+
 
         public bool InsertFood(string name, int id, float price)
         {

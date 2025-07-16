@@ -186,6 +186,7 @@ namespace WindowsFormsApp1
         {
             Admin f = new Admin();
 
+            f.loginAccount = LoginAccount; // truyền thông tin tài khoản đăng nhập vào form Admin
             f.InsertFood += f_InsertFood;
             f.DeleteFood += f_DeleteFood;
             f.UpdateFood += f_UpdateFood;

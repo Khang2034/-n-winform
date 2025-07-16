@@ -107,7 +107,7 @@
             this.panel22 = new System.Windows.Forms.Panel();
             this.txbDisplayName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.txbAccountType = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tcAdmin.SuspendLayout();
             this.tpBill.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -143,6 +143,7 @@
             this.panel24.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tcAdmin
@@ -842,6 +843,7 @@
             this.btnEditAccount.TabIndex = 2;
             this.btnEditAccount.Text = "Sửa";
             this.btnEditAccount.UseVisualStyleBackColor = true;
+            this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
             // 
             // btnDeleteAccount
             // 
@@ -852,6 +854,7 @@
             this.btnDeleteAccount.TabIndex = 1;
             this.btnDeleteAccount.Text = "Xóa";
             this.btnDeleteAccount.UseVisualStyleBackColor = true;
+            this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
             // 
             // btnAddAccount
             // 
@@ -862,6 +865,7 @@
             this.btnAddAccount.TabIndex = 0;
             this.btnAddAccount.Text = "Thêm";
             this.btnAddAccount.UseVisualStyleBackColor = true;
+            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
             // dtgvAccount
             // 
@@ -894,6 +898,7 @@
             this.btnResetPassword.TabIndex = 4;
             this.btnResetPassword.Text = "Đặt lại mật khẩu";
             this.btnResetPassword.UseVisualStyleBackColor = true;
+            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
             // 
             // panel24
             // 
@@ -910,7 +915,6 @@
             this.txbUserName.Location = new System.Drawing.Point(165, 11);
             this.txbUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.ReadOnly = true;
             this.txbUserName.Size = new System.Drawing.Size(404, 22);
             this.txbUserName.TabIndex = 1;
             // 
@@ -927,7 +931,7 @@
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.txbAccountType);
+            this.panel21.Controls.Add(this.numericUpDown1);
             this.panel21.Controls.Add(this.label11);
             this.panel21.Location = new System.Drawing.Point(4, 116);
             this.panel21.Margin = new System.Windows.Forms.Padding(4);
@@ -975,14 +979,17 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Tên hiển thị";
             // 
-            // txbAccountType
+            // numericUpDown1
             // 
-            this.txbAccountType.Location = new System.Drawing.Point(161, 14);
-            this.txbAccountType.Margin = new System.Windows.Forms.Padding(4);
-            this.txbAccountType.Name = "txbAccountType";
-            this.txbAccountType.ReadOnly = true;
-            this.txbAccountType.Size = new System.Drawing.Size(404, 22);
-            this.txbAccountType.TabIndex = 2;
+            this.numericUpDown1.Location = new System.Drawing.Point(161, 11);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown1.TabIndex = 1;
             // 
             // Admin
             // 
@@ -1042,6 +1049,7 @@
             this.panel21.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1127,6 +1135,6 @@
         private System.Windows.Forms.TextBox txbDisplayName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnResetPassword;
-        private System.Windows.Forms.TextBox txbAccountType;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

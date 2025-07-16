@@ -35,6 +35,12 @@ namespace WindowsFormsApp1.DTO
             int result = DataProvider.Instance.ExecuteNonQuery("exec USP_UpdateAccount @username, @displayname, @password, @newpassword", new object[] { username, displayName, pass, newPass });
             return result > 0;
         }
+
+        public DataTable GetListAccount()
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT UserName, DisplayName, Type FROM dbo.Account");
+        }
+
         public Account GetAccountByUserName(string username)
         {
             string query = "SELECT * FROM Account WHERE username = @username";

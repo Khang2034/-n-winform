@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
     public partial class Admin : Form
     {
         BindingSource foodList = new BindingSource();
+        BindingSource accountList = new BindingSource();
         public Admin()
         {
             InitializeComponent();
@@ -24,9 +25,15 @@ namespace WindowsFormsApp1
             Load();
         }
 
+
+
+        #region Methods
+
         void Load()
         {
             dtgvFood.DataSource = foodList;
+            dtgvAccount.DataSource = accountList;
+
             // Thiết lập culture tiếng Việt
             CultureInfo vietnameseCulture = new CultureInfo("vi-VN");
             System.Threading.Thread.CurrentThread.CurrentCulture = vietnameseCulture;
@@ -42,12 +49,26 @@ namespace WindowsFormsApp1
 
             LoadListFood();
 
+            LoadAccount();
+
             LoadCategoryInfoComboBox(cbFoodCategory);
 
             AddFoodBinding();
+
+            AddAccountBinding();
         }
 
-        #region Methods
+        void AddAccountBinding()
+        { 
+            txbUserName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "UserName", true, DataSourceUpdateMode.Never));
+            txbDisplayName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "DisplayName", true, DataSourceUpdateMode.Never));
+            txbAccountType.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
+        }
+
+        void LoadAccount()
+        {
+            accountList.DataSource = AccountDAO.Instance.GetListAccount();
+        }
 
         List<Food> SearchFoodByName(string name)
         {
@@ -87,6 +108,11 @@ namespace WindowsFormsApp1
         #endregion
 
         #region Events
+
+        private void btnShowAccount_Click(object sender, EventArgs e)
+        {
+            LoadAccount();
+        }
 
         private void btnSearchFood_Click(object sender, EventArgs e)
         {
@@ -210,5 +236,7 @@ namespace WindowsFormsApp1
             remove { updateFood -= value; }
         }
         #endregion
+
+        
     }
 }

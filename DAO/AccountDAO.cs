@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.DAO;
-
+using System.Security.Cryptography;
 namespace WindowsFormsApp1.DTO
 {
     public class AccountDAO
@@ -22,10 +22,21 @@ namespace WindowsFormsApp1.DTO
 
         public bool Login(string username, string password)
         {
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes(password);
+            byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+
+            string hasPass = "";
+            foreach (byte item in hasData)
+            {
+                hasPass += item;
+            }
+            //var list = hasData.ToString();
+            //list.Reverse();
+
             string query = "USP_Login @userName , @password";
 
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password });
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, hasPass /*list*/ });
 
 
             return result.Rows.Count > 0;
@@ -57,7 +68,7 @@ namespace WindowsFormsApp1.DTO
 
         public bool InsertAccount(string name, string displayName, int type)
         {
-            string query = string.Format("INSERT dbo.Account (UserName, DisplayName, Type) VALUES (N'{0}', N'{1}', N'{2}')", name, displayName, type);
+            string query = string.Format("INSERT dbo.Account (UserName, DisplayName, Type, password) VALUES (N'{0}', N'{1}', {2}, N'{3}')", name, displayName, type, "1962026656160185351301320480154111117132155");
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
@@ -80,7 +91,7 @@ namespace WindowsFormsApp1.DTO
 
         public bool ResetPassword(string name)
         {
-            string query = string.Format("UPDATE account set password = N'0' where UserName = N'{0}'", name);
+            string query = string.Format("UPDATE account set password = N'1962026656160185351301320480154111117132155' where UserName = N'{0}'", name);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;

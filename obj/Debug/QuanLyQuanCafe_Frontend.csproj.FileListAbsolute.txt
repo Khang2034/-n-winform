@@ -56,3 +56,19 @@ D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.ex
 D:\-n-winform-file-s-a-fontend-1\-n-winform-source\obj\Debug\WindowsFormsApp1.pdb
 D:\Project\-n-winform\bin\Debug\Guna.UI2.dll
 D:\Project\-n-winform\obj\Debug\QuanLyQu.DD9EE0CF.Up2Date
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\bin\Debug\Guna.UI2.dll
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.AssemblyReference.cache
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.AccountProfile.resources
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.Admin.resources
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.TableManager.resources
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.GenerateResource.cache
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\QuanLyQuanCafe_Frontend.csproj.CoreCompileInputs.cache
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\QuanLyQu.DD9EE0CF.Up2Date
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.exe
+C:\Users\ACER NITRO V15\Documents\GitHub\-n-winform\obj\Debug\WindowsFormsApp1.pdb

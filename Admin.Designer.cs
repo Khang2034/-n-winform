@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.tcAdmin = new System.Windows.Forms.TabControl();
             this.tpBill = new System.Windows.Forms.TabPage();
+            this.txbPageBill = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnNextBillPage = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPreviousBillPage = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLastBillPage = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFirstBillPage = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnViewBill = new System.Windows.Forms.Button();
             this.dtpkToDate = new System.Windows.Forms.DateTimePicker();
@@ -103,11 +109,11 @@
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.txbDisplayName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tcAdmin.SuspendLayout();
             this.tpBill.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -142,8 +148,8 @@
             this.panel14.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcAdmin
@@ -162,6 +168,11 @@
             // 
             // tpBill
             // 
+            this.tpBill.Controls.Add(this.txbPageBill);
+            this.tpBill.Controls.Add(this.btnNextBillPage);
+            this.tpBill.Controls.Add(this.btnPreviousBillPage);
+            this.tpBill.Controls.Add(this.btnLastBillPage);
+            this.tpBill.Controls.Add(this.btnFirstBillPage);
             this.tpBill.Controls.Add(this.panel3);
             this.tpBill.Controls.Add(this.dtgvBill);
             this.tpBill.Location = new System.Drawing.Point(4, 25);
@@ -172,6 +183,89 @@
             this.tpBill.TabIndex = 0;
             this.tpBill.Text = "Doanh thu";
             this.tpBill.UseVisualStyleBackColor = true;
+            // 
+            // txbPageBill
+            // 
+            this.txbPageBill.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbPageBill.DefaultText = "1";
+            this.txbPageBill.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbPageBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbPageBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbPageBill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbPageBill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPageBill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbPageBill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPageBill.Location = new System.Drawing.Point(492, 447);
+            this.txbPageBill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbPageBill.Name = "txbPageBill";
+            this.txbPageBill.PlaceholderText = "";
+            this.txbPageBill.ReadOnly = true;
+            this.txbPageBill.SelectedText = "";
+            this.txbPageBill.Size = new System.Drawing.Size(49, 43);
+            this.txbPageBill.TabIndex = 7;
+            this.txbPageBill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txbPageBill.TextChanged += new System.EventHandler(this.txbPageBill_TextChanged);
+            // 
+            // btnNextBillPage
+            // 
+            this.btnNextBillPage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNextBillPage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNextBillPage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNextBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNextBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNextBillPage.ForeColor = System.Drawing.Color.White;
+            this.btnNextBillPage.Location = new System.Drawing.Point(654, 448);
+            this.btnNextBillPage.Name = "btnNextBillPage";
+            this.btnNextBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnNextBillPage.TabIndex = 6;
+            this.btnNextBillPage.Text = "guna2Button1";
+            this.btnNextBillPage.Click += new System.EventHandler(this.btnNextBillPage_Click);
+            // 
+            // btnPreviousBillPage
+            // 
+            this.btnPreviousBillPage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreviousBillPage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreviousBillPage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPreviousBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPreviousBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPreviousBillPage.ForeColor = System.Drawing.Color.White;
+            this.btnPreviousBillPage.Location = new System.Drawing.Point(189, 447);
+            this.btnPreviousBillPage.Name = "btnPreviousBillPage";
+            this.btnPreviousBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnPreviousBillPage.TabIndex = 5;
+            this.btnPreviousBillPage.Text = "guna2Button1";
+            this.btnPreviousBillPage.Click += new System.EventHandler(this.btnPreviousBillPage_Click);
+            // 
+            // btnLastBillPage
+            // 
+            this.btnLastBillPage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLastBillPage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLastBillPage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLastBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLastBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLastBillPage.ForeColor = System.Drawing.Color.White;
+            this.btnLastBillPage.Location = new System.Drawing.Point(840, 447);
+            this.btnLastBillPage.Name = "btnLastBillPage";
+            this.btnLastBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnLastBillPage.TabIndex = 4;
+            this.btnLastBillPage.Text = "Last";
+            this.btnLastBillPage.Click += new System.EventHandler(this.btnLastBillPage_Click);
+            // 
+            // btnFirstBillPage
+            // 
+            this.btnFirstBillPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFirstBillPage.BackgroundImage")));
+            this.btnFirstBillPage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFirstBillPage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFirstBillPage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFirstBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFirstBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFirstBillPage.ForeColor = System.Drawing.Color.White;
+            this.btnFirstBillPage.Location = new System.Drawing.Point(3, 447);
+            this.btnFirstBillPage.Name = "btnFirstBillPage";
+            this.btnFirstBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnFirstBillPage.TabIndex = 3;
+            this.btnFirstBillPage.Text = "First";
+            this.btnFirstBillPage.Click += new System.EventHandler(this.btnFirstBillPage_Click);
             // 
             // panel3
             // 
@@ -213,12 +307,13 @@
             // 
             // dtgvBill
             // 
+            this.dtgvBill.AllowUserToOrderColumns = true;
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvBill.Location = new System.Drawing.Point(4, 60);
             this.dtgvBill.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvBill.Name = "dtgvBill";
             this.dtgvBill.RowHeadersWidth = 51;
-            this.dtgvBill.Size = new System.Drawing.Size(1016, 432);
+            this.dtgvBill.Size = new System.Drawing.Size(1016, 362);
             this.dtgvBill.TabIndex = 1;
             // 
             // tpFood
@@ -939,6 +1034,18 @@
             this.panel21.Size = new System.Drawing.Size(567, 50);
             this.panel21.TabIndex = 4;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(161, 11);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown1.TabIndex = 1;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -978,18 +1085,6 @@
             this.label12.Size = new System.Drawing.Size(122, 24);
             this.label12.TabIndex = 0;
             this.label12.Text = "Tên hiển thị";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(161, 11);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown1.TabIndex = 1;
             // 
             // Admin
             // 
@@ -1047,9 +1142,9 @@
             this.panel24.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1136,5 +1231,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnResetPassword;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private Guna.UI2.WinForms.Guna2Button btnNextBillPage;
+        private Guna.UI2.WinForms.Guna2Button btnPreviousBillPage;
+        private Guna.UI2.WinForms.Guna2Button btnLastBillPage;
+        private Guna.UI2.WinForms.Guna2Button btnFirstBillPage;
+        private Guna.UI2.WinForms.Guna2TextBox txbPageBill;
     }
 }

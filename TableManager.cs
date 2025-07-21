@@ -158,6 +158,79 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region Events
+
+        private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnCheckOut_Click(this,new EventArgs());
+        }
+
+        private void thêmMónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnAddFood_Click(this, new EventArgs());
+        }
+
+        private void btnSwitchTable_Click(object sender, EventArgs e)
+        {
+            int id1 = (lsvBill.Tag as Table).ID;
+
+            int id2 = (cbSwitchTable.SelectedItem as Table).ID;
+            if (MessageBox.Show(string.Format("Bạn có chắc muốn chuyển {0} sang {1}", (lsvBill.Tag as Table).Name, (cbSwitchTable.SelectedItem as Table).Name), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                TableDAO.Instance.SwitchTableStatus(id1, id2);
+            }
+            LoadTable();
+        }
+
+        private void cbFood_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbFood.SelectedItem is DTO.Food selectedFood)
+            {
+                lblDescription.Text = selectedFood.Description ?? "Không có mô tả";
+                lblPrice.Text = selectedFood.Price.ToString("c0", new CultureInfo("vi-VN"));
+
+                pbxFood.Image = GetFoodImageFromResource(selectedFood.ResourceName);
+            }
+        }
+
+        private void btnRemoveSelectedFood_Click(object sender, EventArgs e)
+        {
+            if (lsvBill.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn món trong hóa đơn để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            Table table = lsvBill.Tag as Table;
+            if (table == null) return;
+
+            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            if (idBill == -1) return;
+
+            ListViewItem selectedItem = lsvBill.SelectedItems[0];
+            string foodName = selectedItem.Text;
+
+            Category selectedCategory = cbCategory.SelectedItem as Category;
+            if (selectedCategory == null) return;
+
+            DTO.Food foodToRemove = FoodDAO.Instance
+                .GetListFoodByCategory(selectedCategory.Id)
+                .FirstOrDefault(f => f.Name == foodName);
+
+            if (foodToRemove == null) return;
+
+            int foodID = foodToRemove.Id;
+            int countToRemove = int.Parse(selectedItem.SubItems[1].Text);
+
+            // Xác nhận trước khi xóa
+            if (MessageBox.Show($"Bạn có chắc muốn xóa {foodName} khỏi hóa đơn không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+
+            BillInfoDao.Instance.InsertBillInfo(idBill, foodID, -countToRemove);
+
+            showBill(table.ID);
+            LoadTable();
+        }
+
         void btn_Click(object sender, EventArgs e)
         {
             int tableID = ((sender as Button).Tag as Table).ID;
@@ -291,68 +364,5 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private void btnSwitchTable_Click(object sender, EventArgs e)
-        {
-            int id1 = (lsvBill.Tag as Table).ID;
-
-            int id2 = (cbSwitchTable.SelectedItem as Table).ID;
-            if (MessageBox.Show(string.Format("Bạn có chắc muốn chuyển {0} sang {1}", (lsvBill.Tag as Table).Name, (cbSwitchTable.SelectedItem as Table).Name), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
-            {
-                TableDAO.Instance.SwitchTableStatus(id1, id2);
-            }
-            LoadTable();
-        }
-
-        private void cbFood_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbFood.SelectedItem is DTO.Food selectedFood)
-            {
-                lblDescription.Text = selectedFood.Description ?? "Không có mô tả";
-                lblPrice.Text = selectedFood.Price.ToString("c0", new CultureInfo("vi-VN"));
-
-                pbxFood.Image = GetFoodImageFromResource(selectedFood.ResourceName);
-            }
-        }
-        
-
-
-        private void btnRemoveSelectedFood_Click(object sender, EventArgs e)
-        {
-            if (lsvBill.SelectedItems.Count == 0)
-            {
-                MessageBox.Show("Vui lòng chọn món trong hóa đơn để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            Table table = lsvBill.Tag as Table;
-            if (table == null) return;
-
-            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
-            if (idBill == -1) return;
-
-            ListViewItem selectedItem = lsvBill.SelectedItems[0];
-            string foodName = selectedItem.Text;
-
-            Category selectedCategory = cbCategory.SelectedItem as Category;
-            if (selectedCategory == null) return;
-
-            DTO.Food foodToRemove = FoodDAO.Instance
-                .GetListFoodByCategory(selectedCategory.Id)
-                .FirstOrDefault(f => f.Name == foodName);
-
-            if (foodToRemove == null) return;
-
-            int foodID = foodToRemove.Id;
-            int countToRemove = int.Parse(selectedItem.SubItems[1].Text);
-
-            // Xác nhận trước khi xóa
-            if (MessageBox.Show($"Bạn có chắc muốn xóa {foodName} khỏi hóa đơn không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                return;
-
-            BillInfoDao.Instance.InsertBillInfo(idBill, foodID, -countToRemove);
-
-            showBill(table.ID);
-            LoadTable();
-        }
     }
 }

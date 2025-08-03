@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\accountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:accountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:tablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\accountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:accountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|c:\\users\\acer nitro v15\\documents\\github\\-n-winform\\accountprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:accountprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|c:\\users\\acer nitro v15\\documents\\github\\-n-winform\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|c:\\users\\acer nitro v15\\documents\\github\\-n-winform\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C40CDD2-1812-4F4F-9619-2746A3F6A050}|QuanLyQuanCafe_Frontend.csproj|solutionrelative:dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\Admin.cs",
-              "RelativeDocumentMoniker": "Admin.cs",
-              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\Admin.cs*",
-              "RelativeToolTip": "Admin.cs*",
-              "ViewState": "AgIAAFwBAAAAAAAAAAAAwGgBAAANAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AccountProfile.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\AccountProfile.Designer.cs",
+              "RelativeDocumentMoniker": "AccountProfile.Designer.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\AccountProfile.Designer.cs",
+              "RelativeToolTip": "AccountProfile.Designer.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAgwNYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T12:06:08.74Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-07-30T16:34:04.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DataProvider.cs",
-              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\DAO\\DataProvider.cs",
-              "RelativeDocumentMoniker": "DAO\\DataProvider.cs",
-              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\DAO\\DataProvider.cs",
-              "RelativeToolTip": "DAO\\DataProvider.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAtwDQAAAAQAAAAAAAAAA==",
+              "Title": "AccountProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\AccountProfile.cs",
+              "RelativeDocumentMoniker": "AccountProfile.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\AccountProfile.cs",
+              "RelativeToolTip": "AccountProfile.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwFMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T12:41:40.928Z",
+              "WhenOpened": "2025-07-30T16:06:08.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TableManager.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\TableManager.cs",
+              "RelativeDocumentMoniker": "TableManager.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\TableManager.cs",
+              "RelativeToolTip": "TableManager.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAwwPEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T16:04:16.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\Admin.cs",
-              "RelativeDocumentMoniker": "Admin.cs",
-              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\Admin.cs [Design]*",
-              "RelativeToolTip": "Admin.cs [Design]*",
+              "Title": "AccountProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\AccountProfile.cs",
+              "RelativeDocumentMoniker": "AccountProfile.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\AccountProfile.cs [Design]",
+              "RelativeToolTip": "AccountProfile.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T11:14:57.427Z",
+              "WhenOpened": "2025-07-29T15:46:48.391Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BillDAO.cs",
-              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\DAO\\BillDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\BillDAO.cs",
-              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\DAO\\BillDAO.cs",
-              "RelativeToolTip": "DAO\\BillDAO.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA1wDYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Admin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\Admin.cs",
+              "RelativeDocumentMoniker": "Admin.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO V15\\Documents\\GitHub\\-n-winform\\Admin.cs [Design]",
+              "RelativeToolTip": "Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T12:05:10.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T11:14:57.427Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

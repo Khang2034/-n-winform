@@ -214,11 +214,11 @@
             this.btnNextBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNextBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNextBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnNextBillPage.Location = new System.Drawing.Point(654, 448);
+            this.btnNextBillPage.Location = new System.Drawing.Point(745, 447);
             this.btnNextBillPage.Name = "btnNextBillPage";
-            this.btnNextBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnNextBillPage.Size = new System.Drawing.Size(127, 45);
             this.btnNextBillPage.TabIndex = 6;
-            this.btnNextBillPage.Text = "guna2Button1";
+            this.btnNextBillPage.Text = "Trang sau";
             this.btnNextBillPage.Click += new System.EventHandler(this.btnNextBillPage_Click);
             // 
             // btnPreviousBillPage
@@ -229,11 +229,11 @@
             this.btnPreviousBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnPreviousBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPreviousBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnPreviousBillPage.Location = new System.Drawing.Point(189, 447);
+            this.btnPreviousBillPage.Location = new System.Drawing.Point(146, 447);
             this.btnPreviousBillPage.Name = "btnPreviousBillPage";
-            this.btnPreviousBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnPreviousBillPage.Size = new System.Drawing.Size(127, 45);
             this.btnPreviousBillPage.TabIndex = 5;
-            this.btnPreviousBillPage.Text = "guna2Button1";
+            this.btnPreviousBillPage.Text = "Trang trước";
             this.btnPreviousBillPage.Click += new System.EventHandler(this.btnPreviousBillPage_Click);
             // 
             // btnLastBillPage
@@ -244,11 +244,11 @@
             this.btnLastBillPage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLastBillPage.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLastBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnLastBillPage.Location = new System.Drawing.Point(840, 447);
+            this.btnLastBillPage.Location = new System.Drawing.Point(893, 447);
             this.btnLastBillPage.Name = "btnLastBillPage";
-            this.btnLastBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnLastBillPage.Size = new System.Drawing.Size(127, 45);
             this.btnLastBillPage.TabIndex = 4;
-            this.btnLastBillPage.Text = "Last";
+            this.btnLastBillPage.Text = "Trang cuối";
             this.btnLastBillPage.Click += new System.EventHandler(this.btnLastBillPage_Click);
             // 
             // btnFirstBillPage
@@ -262,9 +262,9 @@
             this.btnFirstBillPage.ForeColor = System.Drawing.Color.White;
             this.btnFirstBillPage.Location = new System.Drawing.Point(3, 447);
             this.btnFirstBillPage.Name = "btnFirstBillPage";
-            this.btnFirstBillPage.Size = new System.Drawing.Size(180, 45);
+            this.btnFirstBillPage.Size = new System.Drawing.Size(127, 45);
             this.btnFirstBillPage.TabIndex = 3;
-            this.btnFirstBillPage.Text = "First";
+            this.btnFirstBillPage.Text = "Trang đầu";
             this.btnFirstBillPage.Click += new System.EventHandler(this.btnFirstBillPage_Click);
             // 
             // panel3

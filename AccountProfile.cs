@@ -83,11 +83,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            UpdateAccountInfo();
-        }
-
         public class AccountEvent : EventArgs
         {
             private Account acc;
@@ -101,6 +96,16 @@ namespace WindowsFormsApp1
             {
                 this.Acc = acc;
             }
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            UpdateAccountInfo();
         }
     }
 }
